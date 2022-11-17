@@ -7,7 +7,7 @@
 
     <div class="py-12">
         <div class="alert alert-danger max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div id="notification" class="alert overflow-hidden shadow-sm sm:rounded-lg alert-danger">
+            <div id="notifications" class="alert  alert-danger">
                 <div class="p-6 text-gray-900">
                     You're logged in!
                 </div>
@@ -24,4 +24,5 @@
             </div>
         </div>
     </div>
+    
 </x-app-layout>

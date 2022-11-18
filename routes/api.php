@@ -17,3 +17,24 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::group([
+    'middleware' => 'api',
+    'namespace' => 'App\Http\Controllers'
+], function($router){
+    // Route::post('login', ['as'=> 'login', 'uses'=> 'AuthController@login']);
+    // Route::post('register', ['as'=> 'register', 'uses'=> 'AuthController@register']);
+    // Route::post('logout', 'AuthController@logout');
+    // Route::post('refresh', 'AuthController@refresh');
+    // Route::get('me', 'AuthController@me');
+
+    Route::get('users', 'UserController@index');
+    // Route::post('users/store', 'UserController@store');
+    // Route::get('users/{id}', 'UserController@show');
+    // Route::get('users/me', 'UserController@me');
+    // Route::put('users/{id}', 'UserController@update');
+    // Route::delete('users/{id}', 'UserController@destroy');
+});
+
+//Route::apiResource('users', UserController::class);
+//Route::get('users', 'UserController@index');

@@ -128,19 +128,25 @@
                 </div>
             </div>
         </div>
-        {{-- <script>
+        <script>
             Echo.channel('notifications')
                 .listen('UserSessionChanged', (e) => {
-                    const notificationElement = document.getElementById('notification');
+                    console.log(e.order.name);
+            });  
+        </script>
+        <script>
 
-                    notificationElement.innerText = e.message;
-
-                    notificationElement.classList.remove('invisible');
-                    notificationElement.classList.remove('alert-success');
-                    notificationElement.classList.remove('alert-danger');
-
-                    notificationElement.classList.add('alert-' + e.type);
+            // Enable pusher logging - don't include this in production
+            Pusher.logToConsole = true;
+        
+            var pusher = new Pusher('957b39183af1147da1f0', {
+              cluster: 'eu'
             });
-        </script> --}}
+        
+            var channel = pusher.subscribe('notifications');
+            channel.bind('UserSessionChanged', function(data) {
+              alert(JSON.stringify(data));
+            });
+          </script>
     </body>
 </html>

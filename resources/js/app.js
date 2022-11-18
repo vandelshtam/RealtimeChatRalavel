@@ -7,10 +7,14 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
-Echo.private('notifications')
-            .listen('UserSessionChanged', (e) => {
-                console.log(e);
-            });   
+// Echo.private('notifications')
+//     .listen('UserSessionChanged', (e) => {
+//         console.log(e);
+//     }); 
+Echo.channel('notifications')
+    .listen('UserSessionChanged', (e) => {
+        console.log(e.order.name);
+    });  
 // Echo.private('notifications')
 //     .listen('UserSessionChanged', (e) => {
 //         const notificationElement = document.getElementById('notification');

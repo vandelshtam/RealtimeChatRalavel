@@ -29,7 +29,7 @@ Route::group([
     // Route::get('me', 'AuthController@me');
 
     Route::get('users', 'UserController@index');
-    // Route::post('users/store', 'UserController@store');
+    Route::post('users/store', 'UserController@store');
     // Route::get('users/{id}', 'UserController@show');
     // Route::get('users/me', 'UserController@me');
     // Route::put('users/{id}', 'UserController@update');

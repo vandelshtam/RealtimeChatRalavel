@@ -1,6 +1,6 @@
 # Laravel 9
 
-# Realtime Chat Laravel
+# Project - "Realtime Chat Laravel"
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
@@ -11,14 +11,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Project - Cometa Chat 
-## Micriservice - Book and product service
 ## Applied technologies:
-### swagger:
-https://swagger.io/     
-https://github.com/DarkaOnLine/L5-Swagger/wiki/Installation-&-Configuration
-### jwt-auth 
-https://jwt-auth.readthedocs.io/en/develop/
+### pusher:
+https://dashboard.pusher.com/
 
 ## How to install:
 - clone this project
@@ -46,12 +41,7 @@ npm install
 npm run build
 ```
 ## Run project:
-## Setup - Docker is required
 
-```
-composer install
-vendor/bin/sail up -d
-```
 - start server
 ```bash
 php artisan server
@@ -59,7 +49,7 @@ npm run dev
 ```
 
 - check connection <br>
-http://localhost:8000
+http://localhost:'your port'
 ## NOTE
 
 - Default Password user : vldmr1@gmail.com<br>

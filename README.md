@@ -46,6 +46,7 @@ npm run build
 ```bash
 php artisan server
 ```
+```
 npm run dev
 ```
 
@@ -55,7 +56,7 @@ http://localhost:'your port'
 
 - Default Password user : vldmr1@gmail.com<br>
 - Default Password user : mvlju977@gmail.com<br>
-```php
+```
 password: 1234567890
 ```
 
